@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mauve - Produse Naturale din Lavandă</title>
+    <link rel="icon" type="image/png" href="409707730_735729255103964_6791570392466760095_n.jpg">
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="409707730_735729255103964_6791570392466760095_n.jpg" alt="Logo Mauve"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="produse.html">Produse</a>
+                        <ul class="dropdown-content">
+                            <li><a href="ulei-esential.html">Uleiuri Esențiale</a></li>
+                            <li><a href="apa-lavanda.html">Apă de Lavandă</a></li>
+                            <li><a href="saculeti-parfumati.html">Săculeți Parfumați</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="despre.html">Despre Noi</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="cart-button"><i class="fas fa-shopping-cart">
+                    </i> Coș (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Descoperă Liniștea</h2>
+                <p>Produse autentice din lavandă pură, cultivate cu grijă.</p>
+                <div id="hero-animation"></div>
+            </div>
+        </section>
+
+        <section id="featured-products" class="container">
+            <h2>Produse Recomandate</h2>
+            <div class="products-flex-container">
+            
+                <article class="product-card-featured">
+                <h3>Ulei Esențial de Lavandă</h3>
+                    <img src="WhatsApp Image 2025-11-15 at 17.15.00_fbd4860e.jpg" alt="Sticlă cu ulei esențial de lavandă">
+                    <p>100% pur, perfect pentru aromaterapie și relaxare.</p>
+                    <a href="ulei-esential.html" class="btn">Vezi detalii</a>
+                </article>
+            
+                <article class="product-card-featured">
+                    <h3>Apă de Lavandă</h3>
+                    <img src="WhatsApp Image 2025-11-15 at 17.14.23_e7d7ce11.jpg" alt="Sticlă cu pulverizator cu apă de lavandă">
+                    <p>Toner natural și revigorant pentru toate tipurile de ten.</p>
+                    <a href="apa-lavanda.html" class="btn">Vezi detalii</a>
+                </article>
+                
+                <article class="product-card-featured">
+                    <h3>Săculeți Parfumați</h3>
+                    <img src="saculeti.jpg" alt="Săculeți parfumați cu lavandă">
+                    <p>Pentru un miros proaspăt și natural în dulapuri și sertare.</p>
+                    <a href="saculeti-parfumati.html" class="btn">Vezi detalii</a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 mauve. Toate drepturile rezervate.</p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61554594878427" target="_blank" aria-label="Pagina noastră de Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/mauveshop.ro" target="_blank" aria-label="Pagina noastră de Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@mauveshop.ro?_r=1&_t=ZN-91QRoB3SPW2" target="_blank" aria-label="Pagina noastră de TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Coșul tău de cumpărături</h2>
+            <div id="cart-items-list">
+                </div>
+            <div id="cart-total">
+                <strong>Total: 0 RON</strong>
+            </div>
+            <button id="checkout-btn" class="btn">Finalizează Comanda</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

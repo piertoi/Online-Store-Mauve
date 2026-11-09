@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre Noi - mauve</title>
+    <link rel="icon" type="image/png" href="409707730_735729255103964_6791570392466760095_n.jpg">
+    <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="409707730_735729255103964_6791570392466760095_n.jpg" alt="Logo Mauve"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li class="dropdown">
+                        <a href="produse.html">Produse</a>
+                        <ul class="dropdown-content">
+                            <li><a href="ulei-esential.html">Uleiuri Esențiale</a></li>
+                            <li><a href="apa-lavanda.html">Apă de Lavandă</a></li>
+                            <li><a href="saculeti-parfumati.html">Săculeți Parfumați</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="despre.html">Despre Noi</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="cart-button"><i class="fas fa-shopping-cart"></i> Coș (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+    <h2>Povestea Noastră</h2>
+    
+    <section class="about-row">
+        <div class="about-text">
+            <h3>Pasiunea Noastră</h3>
+            <p>Bun venit la "mauve"! Ne-am născut din pasiunea pentru natură și pentru proprietățile extraordinare ale lavandei. Cultivăm propria lavandă în mod ecologic, fără pesticide sau chimicale, pentru a ne asigura că fiecare produs care ajunge la tine este de cea mai înaltă calitate.</p>
+            <p>De la câmpurile noastre însorite până în casa ta, misiunea noastră este să aducem un strop de calm și echilibru în viața de zi cu zi.</p>
+        </div>
+        <div class="about-image">
+            <img src="camp.jpg" alt="Câmp de lavandă însorit">
+        </div>
+    </section>
+    
+    <section class="about-row">
+        <div class="about-text">
+            <h3>Cultivare Ecologică</h3>
+            <p>Filozofia noastră este simplă: respect pentru pământ. Totul este cules manual, la momentul potrivit, pentru a maximiza concentrația de uleiuri esențiale. Uscarea se face natural, la umbră, păstrând intact parfumul și proprietățile florilor.</p>
+            <p>Credem în transparență totală. Fiecare sticluță de ulei esențial poartă povestea câmpului din care provine.</p>
+        </div>
+        <div class="about-image">
+            <img src="buchet.jpg" alt="Buchet de lavandă proaspăt cules">
+        </div>
+    </section>
+
+</main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 mauve. Toate drepturile rezervate.</p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61554594878427" target="_blank" aria-label="Pagina noastră de Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/mauveshop.ro" target="_blank" aria-label="Pagina noastră de Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@mauveshop.ro?_r=1&_t=ZN-91QRoB3SPW2" target="_blank" aria-label="Pagina noastră de TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Coșul tău de cumpărături</h2>
+            <div id="cart-items-list">
+                </div>
+            <div id="cart-total">
+                <strong>Total: 0 RON</strong>
+            </div>
+            <button id="checkout-btn" class="btn">Finalizează Comanda</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
